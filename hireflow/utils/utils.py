@@ -50,7 +50,7 @@ def load_pdf(file_path: str) -> str:
         if not documents:
             logger.warning(f"No pages found in PDF: {file_path}")
             return ""
-
+git 
         full_text = "\n".join(
             doc.page_content for doc in documents
             if doc.page_content
